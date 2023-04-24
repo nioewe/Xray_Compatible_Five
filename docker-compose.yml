@@ -1,0 +1,10 @@
+x-uffizzi:
+  ingress:
+    service: app
+    port: 3000
+    
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
